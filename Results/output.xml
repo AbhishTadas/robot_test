@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-01-18T12:42:09.343316" rpa="false" schemaversion="5">
+<suite id="s1" name="Googletest" source="C:\robotFramework\robot\Tests\googletest.robot">
+<test id="s1-t1" name="This is a sample test case" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-18T12:42:12.176914" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'.</msg>
+<arg>http://www.google.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-18T12:42:12.176914" elapsed="24.205578"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-18T12:42:36.382492" elapsed="5.563252"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-18T12:42:41.945744" elapsed="0.000000"/>
+</kw>
+<doc>Googletest</doc>
+<status status="PASS" start="2024-01-18T12:42:12.175785" elapsed="29.769959"/>
+</test>
+<test id="s1-t2" name="Execute Javascript - window.open() - opens new window" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-18T12:42:41.961048" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org'.</msg>
+<arg>https://robotframework.org</arg>
+<arg>chrome</arg>
+<arg>alias=BrowserA</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-18T12:42:41.961048" elapsed="53.494733"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-18T12:43:35.457991" level="INFO">Executing JavaScript:
+window.open()
+Without any arguments.</msg>
+<arg>window.open()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-18T12:43:35.456921" elapsed="0.051875"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-01-18T12:43:35.509797" elapsed="0.020289"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-18T12:43:35.531082" level="INFO">Opening url 'https://robocon.io'</msg>
+<arg>https://robocon.io</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-18T12:43:35.531082" elapsed="1.866953"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-18T12:43:37.399131" elapsed="3.324250"/>
+</kw>
+<status status="PASS" start="2024-01-18T12:42:41.961048" elapsed="58.763609"/>
+</test>
+<status status="PASS" start="2024-01-18T12:42:09.349728" elapsed="91.377324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Googletest">Googletest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

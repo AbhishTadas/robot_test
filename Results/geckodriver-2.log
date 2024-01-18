@@ -1,0 +1,14 @@
+1705326106438	geckodriver	INFO	Listening on 127.0.0.1:58464
+1705326109654	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58465" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\781395\\AppData\\Local\\Temp\\rust_mozprofile1HaLWb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705326111146	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1705326111673	Marionette	INFO	Listening on port 58475
+WebDriver BiDi listening on ws://127.0.0.1:58465
+Read port: 58475
+1705326112150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58465/devtools/browser/6871e457-dc27-4467-96a4-4d38bee0f290
+1705326122961	Marionette	INFO	Stopped listening on port 58475
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 722: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "Native Messaging: Wait for application com.forcepoint.usersessionidprovider to exit"
